@@ -274,9 +274,6 @@ class GameTypingBaseScene(GameBaseScene):
 
     def check_input(self) -> bool:
         input_text = self.inputbox.text
-        print(input_text)
-        print(self.currently_asked)
-        print(input_text == self.currently_asked)
         if input_text == self.currently_asked:
             return True
         return False
