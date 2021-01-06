@@ -1,10 +1,20 @@
 # TopoLoco
 
-A Game to learn topography
+A Game to learn Topography
+
+**Search** the asked location on a map or **type** the name of the asked location!
+
+Ever extending **online library** of levels created by you or myself
+
+
+
+For now: only **German** is available
 
 
 
 ___
+
+
 
 
 
