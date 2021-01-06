@@ -1,0 +1,95 @@
+{
+  "image_path": "maps/tex_asia_nature.png",
+  "version": "1.0",
+  "lang": "DE",
+  "name": "Asien - Naturräumliche Gliederung",
+  "description": "Alle Naturräumliche Merkmale Asiens für die VOrbereitung auf die Topoprüfung ;)",
+  "categories": ["Meere, Meeresteile/-strömungen", "Inseln, Halbinseln, Kap", "Berge, Gebirge", "Flüsse, Seen", "Spezielle Gebiete"],
+  "locations": {
+
+    "Meere, Meeresteile/-strömungen": {
+      "Arabisches Meer": [172,697],
+      "Beringmeer": [764, 155],
+      "Gelbes Meer": [684, 503],
+      "Golf von Aden": [81, 638],
+      "Golf von Bengalen": [417, 709],
+      "Indischer Ozean": [162, 864],
+      "Japanisches Meer": [718, 400],
+      "Kaspisches Meer": [181, 407],
+      "Kuro-Schio (warm)": [725, 597],
+      "Malakkastrasse": [536, 809],
+      "Nordpolarmeer": [405, 74],
+      "Ostchinesisches Meer": [689, 546],
+      "Pazifischer Ozean": [795, 590],
+      "Persischer Golf": [134, 538],
+      "Rotes Meer": [19, 518],
+      "Schwarzes Meer": [102, 325],
+      "Südchinesisches Meer": [634, 711]
+    },
+
+    "Inseln, Halbinseln, Kap": {
+      "Borneo": [656, 802],
+      "Celebes": [719, 812],
+      "Honshu": [759, 404],
+      "Java": [627, 875],
+      "Kamtschatka": [720, 194],
+      "Korea-Halbinsel": [687, 450],
+      "Luzon": [697, 643],
+      "Malakka-Halbinsel": [538, 781],
+      "Malediven": [270, 786],
+      "Mindanao": [746, 699],
+      "Sachalin": [707, 297],
+      "Sinai": [32, 429],
+      "Sri Lanka": [346, 763],
+      "Sumatra": [541, 844],
+      "Taiwan": [680, 587]
+    },
+
+    "Berge, Gebirge": {
+      "Himalaya": [364, 548],
+      "Hindukusch": [280, 506],
+      "Kaukasus": [150, 376],
+      "Mount Everest": [405, 583],
+      "Pamir": [310, 487],
+      "Taurus": [82, 376],
+      "Ural": [293, 274],
+      "West-Ghats": [304, 697]
+    },
+
+    "Flüsse, Seen": {
+      "Amur": [638, 337],
+      "Aralsee": [246, 394],
+      "Baikalsee": [523, 351],
+      "Balchaschsee": [339, 412],
+      "Brahmaputra": [452, 598],
+      "Euphrat": [83, 420],
+      "Ganges": [377, 615],
+      "Huang He": [594, 490],
+      "Indus": [254, 564],
+      "Irtysch": [333, 317],
+      "Jenissej": [432, 284],
+      "Lena": [548, 272],
+      "Mekong": [557, 684],
+      "Ob": [388, 321],
+      "Tigris": [122, 437],
+      "Ural": [211, 344],
+      "Jangtsekiang": [578, 547]
+    },
+
+    "Spezielle Gebiete": {
+      "Arabien": [76, 527],
+      "Hochland von Anatolien": [96, 371],
+      "Hochland von Dekkan": [331, 675],
+      "Hochland von Iran": [181, 493],
+      "Hochland von Tibet": [421, 544],
+      "Indochina": [527, 690],
+      "Kasachensteppe": [284, 372],
+      "Mandschurei": [645, 388],
+      "Mesopotamien": [99, 419],
+      "Vorderindien": [327, 638],
+      "Westsibirisches Tiefland": [361, 299],
+      "Wüste Gobi": [516, 454],
+      "Wüste Thar": [276, 587]
+    }
+  }
+}
