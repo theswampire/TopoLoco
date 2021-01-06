@@ -1,5 +1,6 @@
-from pygame.freetype import Font
 import pygame
+from pygame.freetype import Font
+
 from game.utils import rel_to_root
 
 __all__ = ["title_font", "question_font", "question_asked_font", "fps_counter", "category_font", "text_input_font",

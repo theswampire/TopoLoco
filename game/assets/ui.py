@@ -6,9 +6,9 @@ from pygame import Surface, RLEACCEL
 from pygame.locals import MOUSEMOTION, MOUSEBUTTONDOWN, MOUSEBUTTONUP
 
 import game.assets.color_palette as c
-from game.assets.fonts import text_input_font, regular_font_15
-from game.utils import invert_color, aspect_scale
 from game.animations import Blinker
+from game.assets.fonts import text_input_font
+from game.utils import invert_color, aspect_scale
 
 __all__ = ["TextInputBox", "ListView", "ListItem", "Button", "Notification", "LoadingCircleLoop"]
 
@@ -42,8 +42,9 @@ class TextInputBox:
 
         if event.type == pygame.KEYDOWN:
             if self.active:
-
-                if event.key == pygame.K_BACKSPACE:
+                if event.key == pygame.K_RETURN or event.key == pygame.K_ESCAPE:
+                    pass
+                elif event.key == pygame.K_BACKSPACE:
                     if ctrl_pressed:
                         self.text = ""
                     else:

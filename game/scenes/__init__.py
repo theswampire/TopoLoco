@@ -1,5 +1,7 @@
 import json
+import platform
 import random
+import webbrowser
 from concurrent.futures import ThreadPoolExecutor
 from itertools import zip_longest
 from pathlib import Path
@@ -25,7 +27,6 @@ from game.config import *
 from game.config import VERSION, __author__ as a
 from game.scenes.base_scene import SceneBase
 from game.utils import rel_to_root, rel_to_writable, is_custom_path, aspect_scale, multiline_text
-import webbrowser
 
 __author__ = a
 
@@ -273,6 +274,9 @@ class GameTypingBaseScene(GameBaseScene):
 
     def check_input(self) -> bool:
         input_text = self.inputbox.text
+        print(input_text)
+        print(self.currently_asked)
+        print(input_text == self.currently_asked)
         if input_text == self.currently_asked:
             return True
         return False
@@ -1034,14 +1038,15 @@ class About(SceneBase):
         # Information
         self.info_texts = multiline_text(f"""TopoLoco - erstellt mit PyGame
 
-Falls du irgendwelche Fehler findest oder einen Vorschlag hast: 
+Falls du irgendwelche Fehler findest oder einen Vorschlag hast:
 Melde es mir, sodass ich mich dahintersetzen kann!
 
-Version: v{VERSION}, Python 3.8.6
 Autor: Kai Siegfried
+Version: v{VERSION}
+Python {platform.python_version()}
 """,
                                          font=text_input_font, color=c.bg_listview, max_length=480)
-        self.info_text = Surface((510, 380))
+        self.info_text = Surface((510, 400))
 
         self.must_update = False
         self.link_click_cooldown = 2

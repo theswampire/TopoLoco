@@ -1,9 +1,9 @@
 from pygame import Color, draw, Surface
-from pygame.sprite import Sprite
 from pygame.locals import RLEACCEL
-from game.utils import invert_color
+from pygame.sprite import Sprite
 
 import game.assets.color_palette as c
+from game.utils import invert_color
 
 __all__ = ["LocationMarker"]
 

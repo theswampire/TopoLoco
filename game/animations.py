@@ -1,6 +1,7 @@
+from typing import Union
+
 import easing_functions
 from pygame import Surface, Color
-from typing import Union
 
 from game.config import *
 from game.scenes.base_scene import SceneBase

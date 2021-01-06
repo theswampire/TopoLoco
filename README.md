@@ -28,7 +28,7 @@ Look **Manual Installation**
 
 #### Manual Installation
 
-1. Install **Python 3.8** from [**here**](https://www.python.org/downloads/)
+1. Install **Python 3.9** (min. 3.8) from [**here**](https://www.python.org/downloads/)
 
 2. Download **source code** and unzip it to a new folder.
 
@@ -47,7 +47,7 @@ Look **Manual Installation**
 
 4. Install **dependencies**:
 
-   - Execute `pip install pygame==2.0.0 requests==2.25.1 packaging==20.8 easing-functions==1.0.3`
+   - Execute `pip install pygame==2.0.1 requests==2.25.1 packaging==20.8 easing-functions==1.0.3`
      (if you didn't use a virtual environment use `python -m pip install ...`)
 
 5. Pretty much done:
@@ -185,11 +185,11 @@ You are welcome to contribute your improvements on platform compatibility. Like 
 
 ### Dependencies
 
-On Python **3.8.6** developed and tested (Windows only for now)
+On Python **3.9.1** developed and tested (Windows only for now)
 
 ##### Pip packages:
 
-- `pygame==2.0.0`
+- `pygame==2.0.1`
 - `easing-functions==1.0.3`
 - `packaging==20.8`
 - `requests==2.25.1`
