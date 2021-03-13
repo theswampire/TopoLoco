@@ -119,7 +119,7 @@ class ListItem:
 
 class ListView:
     def __init__(self, listview_list: list, item_height: int = 36, item_length: int = 250, height: int = 400,
-                 item_margin: int = 5, selection: bool = False, selected_index: Union[int, None] = None,
+                 item_margin: int = 10, selection: bool = False, selected_index: Union[int, None] = None,
                  bg_color: pygame.Color = c.bg_game_scene, base_color: pygame.Color = c.bg_listview,
                  hover_color: pygame.Color = c.bg_listview_hovered, pressed_color: pygame.Color = c.bg_button_pressed,
                  vertical_clip_scroll: bool = True):

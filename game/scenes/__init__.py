@@ -2,6 +2,7 @@ import json
 import platform
 import random
 import webbrowser
+# import clipboard
 from concurrent.futures import ThreadPoolExecutor
 from itertools import zip_longest
 from pathlib import Path
@@ -56,8 +57,8 @@ class GameBaseScene(SceneBase):
         if not image_path.exists():
             image_path = Path(rel_to_writable(f"textures/{rel_image_path}"))
         self.map = Map(rel_to_root(image_path))
-        self.map.surf = aspect_scale(self.map.surf, (SCREEN_WIDTH, SCREEN_HEIGHT), True)
-        self.map.rect.topleft = SCREEN_WIDTH - self.map.surf.get_width(), SCREEN_HEIGHT - self.map.surf.get_height()
+        self.map.surf = aspect_scale(self.map.surf, (SCREEN_WIDTH/3*2, SCREEN_HEIGHT), True)
+        self.map.rect.topleft = SCREEN_WIDTH - self.map.surf.get_width(), (SCREEN_HEIGHT - self.map.surf.get_height())/2
         self.map.original_surf = self.map.surf
 
     def load_data(self, dataset_path: Union[str, Path]):
@@ -589,7 +590,7 @@ class Categories(SceneBase):
 
         self.level_list = level_list
         if build:
-            lv = ListView(level_list, selection=True, item_height=40, item_length=350, vertical_clip_scroll=True)
+            lv = ListView(level_list, selection=True, item_height=50, item_length=350, vertical_clip_scroll=True)
             lv.rect.topleft = SCREEN_WIDTH / 12, SCREEN_HEIGHT / 5 * 2
             self.listview = lv
 
