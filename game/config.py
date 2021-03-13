@@ -1,5 +1,5 @@
 __author__ = "Kai Siegfried"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 VERSION = __version__
 
 SCREEN_WIDTH = 1400
